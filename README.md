@@ -16,10 +16,10 @@ curl https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/PG/2006/04/30001-
 
 cat 1-10000.txt 10001-20000.txt 20001-30000.txt 30001-40000.txt > 1-40000.txt
 
-$ egrep -i '^[a-z][a-gi-z][a-hj-z][a-z]t$' 1-40000.txt  | grep -vi s | grep -vi r | head -n5
-about
+$ egrep -i '^[a-z][^h][^i][a-z]t$' 1-40000.txt  | grep -vi s | grep -vi r | grep i | grep h | head -n5
 might
 night
 light
-doubt
+fight
+eight
 ```
