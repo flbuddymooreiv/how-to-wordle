@@ -1,4 +1,4 @@
-#How To Wordle 
+# How To Wordle 
 
 Use project gutenberg frequency sorted top 40000 words:
 ```
