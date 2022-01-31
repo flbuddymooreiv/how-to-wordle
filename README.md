@@ -1,3 +1,5 @@
+How To Wordle (Use project gutenberg frequency sorted top 40000 words):
+
 ```
 $ cat parser.py 
 import sys; 
