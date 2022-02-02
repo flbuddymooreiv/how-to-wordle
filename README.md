@@ -27,7 +27,14 @@ cat 1-10000.txt 10001-20000.txt 20001-30000.txt 30001-40000.txt > 1-40000.txt
 
 Make your guesses
 ```
-egrep -i '^[a-z][^h][^i][a-z]t$' 1-40000.txt  | grep -vi s | grep -vi r | grep i | grep h | head -n5
+# the first letter could be anything
+# the second letter is not 'h'
+# the third letter is not 'i'
+# the fourth letter could be anything
+# the last letter is 't'
+# 's' and 'r' are not in the word
+# 'i' and 'h' are in the word
+egrep -i '^[a-z][^h][^i][a-z]t$' 1-40000.txt  | grep -vi [sr] | grep i | grep h | head -n5
 might
 night
 light
