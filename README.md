@@ -1,6 +1,6 @@
 # How To Wordle 
 
-Use project gutenberg frequency sorted top 40000 words:
+Use [Project Gutenberg](https://en.wikipedia.org/wiki/Project_Gutenberg) frequency sorted top 40000 words:
 
 Make a parser
 ```
