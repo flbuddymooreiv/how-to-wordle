@@ -2,7 +2,7 @@
 
 Use [Project Gutenberg](https://en.wikipedia.org/wiki/Project_Gutenberg) frequency sorted top 40000 words:
 
-Make a parser
+Make a wikipedia parser
 ```
 cat parser.py
 import sys; 
@@ -12,7 +12,7 @@ for x in s.find("div", class_="mw-parser-output").find_all("tr"):
     print(x.find_all("td")[1].text)
 ```
 
-Download the dictionaries
+Download and parse the dictionaries
 ```
 curl https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/PG/2006/04/1-10000 | python3 parser.py > 1-10000.txt
 curl https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/PG/2006/04/10001-20000 | python3 parser.py > 10001-20000.txt
